@@ -8,9 +8,9 @@ var PHONE = window.PHONE = function(config) {
 	config.ssl        = true; // Force HTTPS
     var PHONE         = function(){};
     var pubnub        = PUBNUB(config);
-    var pubkey        = config.publish_key   || 'demo';
+    var pubkey        = config.publish_key   || 'pub-c-d1e68e88-380f-48b9-91ac-c565928ad226';
     var snapper       = function(){ return ' ' }
-    var subkey        = config.subscribe_key || 'demo';
+    var subkey        = config.subscribe_key || 'sub-c-7a5599fe-ba10-11e4-bec3-02ee2ddab7fe';
     var sessionid     = PUBNUB.uuid();
     var mystream      = null;
     var myvideo       = document.createElement('video');
